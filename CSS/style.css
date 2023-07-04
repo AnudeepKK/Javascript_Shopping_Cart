@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Dancing+Script:wght@700&display=swap');
 
 .navbar {
     color: brown;
@@ -24,6 +24,10 @@
 #shop-product{
     color: blue;
     text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: underline;
 }
 *{
     font-family: 'Bacasime Antique', serif;
