@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
@@ -12,14 +13,14 @@
     <header>
         <nav class="navbar">
             <a href="" >Shopping Cart</a>
-            <i class='bx bxs-cart' ></i>
+            <a href="./Cart.html"><i class='bx bxs-cart' ></i></a> 
         </nav>
     </header>
 
     <!--item section-->
     <section>
         <div>
-            <br><br>    
+            <br><br><br>
             <h2 id="shop-product">Shopping Products</h2>
         </div>
 
@@ -30,6 +31,7 @@
             <h2>Formal Shirt</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
             <span>₹750</span>
+            <button type="button" onclick="addToCart('Formal Shirt', 'Image1.jpg', 750)">Add</button>
             <i class='bx bxs-t-shirt'></i>
         </div>
 
@@ -38,6 +40,7 @@
             <h2>Royal Wear</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
             <span>₹5700</span>
+            <button type="button" onclick="addToCart('Royal Wear', 'Image2.jpg', 5700)">Add</button>
             <i class='bx bxs-t-shirt'></i>
         </div>
 
@@ -46,6 +49,7 @@
             <h2>Black Shirt</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
             <span>₹500</span>
+            <button type="button" onclick="addToCart('Black Shirt', 'Image3.jpg', 500)">Add</button>
             <i class='bx bxs-t-shirt'></i>
         </div>
 
@@ -54,6 +58,7 @@
             <h2>Function Wear</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
             <span>₹1750</span>
+            <button type="button" onclick="addToCart('Function Wear', 'Image4.jpg', 1750)">Add</button>
             <i class='bx bxs-t-shirt'></i>
         </div>
 
@@ -62,16 +67,15 @@
             <h2>Cool Wear</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
             <span>₹3750</span>
+            <button type="button" onclick="addToCart('Cool Wear', 'Image5.jpg', 3750)">Add</button>
             <i class='bx bxs-t-shirt'></i>
         </div>
-        <!-- </div>
-
-        <div class="product-container-1"> -->
         <div class="product-1">
             <img src="../Images/Image6.jpg" alt="Loading">
             <h2>Casual Wear</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
             <span>₹950</span>
+            <button type="button" onclick="addToCart('Casual Wear', 'Image6.jpg', 950)">Add</button>
             <i class='bx bxs-t-shirt'></i>
         </div>
 
@@ -80,6 +84,7 @@
             <h2>Summer Wear</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
             <span>₹1450</span>
+            <button type="button" onclick="addToCart('Summer Wear', 'Image7.jpg', 1450)">Add</button>
             <i class='bx bxs-t-shirt'></i>
         </div>
 
@@ -88,6 +93,7 @@
             <h2>Dark Wear</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
             <span>₹750</span>
+            <button type="button" onclick="addToCart('Dark Wear', 'Image8.jpg', 750)">Add</button>
             <i class='bx bxs-t-shirt'></i>
         </div>
 
@@ -96,6 +102,7 @@
             <h2>Loose Wear</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
             <span>₹1950</span>
+            <button type="button" onclick="addToCart('Loose Wear', 'Image9.jpg', 1950)">Add</button>
             <i class='bx bxs-t-shirt'></i>
         </div >
 
@@ -104,16 +111,16 @@
             <h2>Light Wear</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, delectus.</p>
             <span>₹2750</span>
+            <button type="button" onclick="addToCart('Light Wear', 'Image10.jpg', 2750)">Add</button>
             <i class='bx bxs-t-shirt'></i>
         </div>
         </div>
 
     </section>
 
-
-    <box-icon name='shopping-bag'></box-icon>
-    <i class='bx bx-shopping-bag'></i>  
-
-    <script src="../JS/Script.js"></script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/Script.js">
+        
+    </script>
 </body>
 </html>
