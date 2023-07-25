@@ -1,4 +1,11 @@
 function addToCart(productName, imageName, price) {
+  
+var cartCount = document.querySelector(".cart-count");
+var currentCount = parseInt(cartCount.innerText) || 0;
+cartCount.innerText = currentCount + 1;
+
+  alert("Item added successfully")
+
   var item = {
     productName: productName,
     imageName: imageName,
@@ -72,6 +79,7 @@ function handleQuantityChange(event) {
 
 
 function handleDelete(event) {
+  
   var index = event.target.dataset.index;
   var cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -81,6 +89,10 @@ function handleDelete(event) {
     updateCart();
     updateTotal();
   }
+
+  var cartCount = document.querySelector(".cart-count");
+  var currentCount = parseInt(cartCount.innerText) || 0;
+  cartCount.innerText = currentCount - 1;
 }
 
 
